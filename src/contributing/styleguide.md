@@ -364,6 +364,15 @@ int const *p2;             // pointer to a const int
 int const *const p4 = &c;  // const pointer to a const int
 ```
 
+### auto
+Use `auto` only when it improves readability.
+
+* Do not use `auto` when the deduced type is not immediately obvious from the
+  initializer or the surrounding context.
+* Use `auto` in particular when it significantly shortens a line and the type is
+  obvious or insignificant (for example for iterators, lambdas, or verbose
+  template types).
+
 ## C/C++ Integral Constants
 
 Use `enum` types to define integral constants wherever possible. Avoid `static
