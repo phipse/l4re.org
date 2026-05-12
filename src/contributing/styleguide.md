@@ -7,6 +7,13 @@ structure and some of the rules are derived from the Linux kernel coding style.
 In general a common coding style is about maintaining readability and
 maintainability of a shared code base.
 
+## Coding style changes
+
+In general, we do not change code just to fix the coding style. This obfuscates
+the history of the line without adding value.
+The coding style shall be fixed when working on the code and adding value to
+it.
+
 ## Indentation
 
 We don't use tabs but spaces for indentation. A new block of control is
