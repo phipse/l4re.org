@@ -312,6 +312,11 @@ private:
 Usually you should use `class` for class definitions.  `struct` may be only
 used for classes when all members of a class are public.
 
+In C code, the `_t` suffix denotes a type, e.g. `l4_uint32_t`, `l4_addr_t`.
+
+If a C++ class name ends with `_t` is must take a template parameter. It is not
+mandatory to use a `_t` suffix on a class taking template parameters.
+
 ## Loops
 
 ```c++
